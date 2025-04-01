@@ -1,0 +1,97 @@
+body {
+    background-color: #5c4033;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FAFAFA;
+}
+
+.navigation {
+    background-color: #251a14;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-links {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1200px;
+    gap: 2rem;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+#intro, h1 {
+    text-align: center;
+    padding-top: 4rem;
+}
+
+a {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+a:active {
+    color: yellow;
+}
+
+a:hover {
+    color: green;
+}
+
+a:visited {
+    color: red;
+}
+
+.links {
+    text-align: center;
+}
+
+#socials {
+    text-align: center;
+}
+
+#skills {
+    text-align: center;
+}
+
+.skills-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-column {
+    background-color: #251a14;
+   
+}
+
+.skills-column ul {
+    list-style: none;
+}
+
+.skills-column h3 {
+    text-align: center;
+}
+
+#education {
+    text-align: center;
+}
+
+
+.links a {
+    padding: 2rem;
+}
+
+.rights {
+    display: flex;
+    align-items: center;
+    
+}
+
+.rights p {
+    margin: 0;
+}
