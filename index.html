@@ -14,8 +14,8 @@
                     <ul class="nav-links">
                         <li><a href="#intro">Hello</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="skills">Skills</a></li>
-                        <li><a href="education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
                         <li><a href="#socials">Connect</a></li>
                     </ul>
                 
@@ -23,18 +23,26 @@
         </header>
         <main>
             <section id="intro">
-                <h1>Hi there. I am <span style="color: royalblue;">Edmond</span>. Welcome to my portfolio webpage.</h1>
+                <h1>Hi there. I am <span style="color: royalblue;">Edmond</span>.</h1>
+                <p class="tag-line">Developer | Doctor | Human</p>
             </section>
             <section id="about">
-                <h2>About me...</h2>
-                <p>My name is Edmond Ombaso, a student doctor and a budding software developer. I have always had an interest in all things computers,
-                    and the AI boom has only served to stoke the fire. I am learning software development to optimize my daily activities, and I also hope 
-                    to develop tech solutions for the healthcare industry.
-                </p>
-                <p>You can <a href="finalcv.pdf" download="Edmond-Ombaso-CV">download my CV </a>to learn more about me.</p>
+                <h2>So about me...</h2>
+                <div class="about-content">
+                    <figure>
+                        <img src="Edmond.jpg" width="300" height="300" alt="Edmond">
+                        <figcaption>This is me.</figcaption>
+                    </figure>
+                    <div class="about-content-right"> 
+                        <p>My name is Edmond Ombaso, a student doctor and a budding software developer. I have always had an interest in all things computers,
+                            and the AI boom has only served to stoke the fire. I am learning software development to optimize my daily activities, and I also hope 
+                            to develop tech solutions for the healthcare industry.You can 
+                            <a href="finalcv.pdf" download="Edmond-Ombaso-CV">download my CV </a>to learn more about me.</p>                        
+                    </div>
+                </div>
             </section>
             <section id="skills">
-                <p>This is what I've learnt so far:</p>
+                <p>This is some of what I've learnt so far and the tools I use. Come back later to view my progress:</p>
                 <div class="skills-layout">
                     <div class="skills-column">
                         <h3>Programming Languages</h3>
@@ -56,21 +64,60 @@
 
             </section>
             <section id="education">
-                <h3>Education</h3>
-                <div>
-                    <h4>2020 - Present</h4>
-                    <h5>Bachelor of Medicine and Bachelor of Surgery</h5>
-                    <p>The University of Nairobi</p>
-                </div>
-                <div>
-                    <h4>Feb 2025 - Present</h4>
-                    <h5>SOftware Development</h5>
-                    <p>Power Learn Project Africa</p>
+                <h2>Education</h2>
+                <div class="education-content">
+                    <div>
+                        <h3>Healthcare</h3>
+                        <h4>2020 - Present</h4>
+                        <h5>Bachelor of Medicine and Bachelor of Surgery</h5>
+                        <p>The University of Nairobi</p>
+                        <i class="fas fa-hospital-symbol"></i>
+                    </div>
+                    <div>
+                        <h3>Computing</h3>
+                        <h4>Feb 2025 - Present</h4>
+                        <h5>SOftware Development</h5>
+                        <p>Power Learn Project Africa</p>
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div>
+                        <h3>Soft Skills</h3>
+                        <h4>Feb 2020</h4>
+                        <h5>Leadership and Entreprenuership</h5>
+                        <p>Equity Leaders Program</p>
+                        <i class="fas fa-user-tie"></i>
+                    </div>
                 </div>
 
             </section>
             <footer id="socials">
-                <p>Connect with me.</p>
+                <p>Let's start a conversation. You can drop me an email, call or text me using the following contact information.</p>
+                <div class="socials-flex">
+                    <div class="my-contacts">
+                        <p>Connect with me:</p>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>ombasoedmond@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+254 797981498</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Kenya</p>
+                        </div>
+                    </div>
+                    <div class="email-me">
+                        <form class="email-sub">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="youremail@provider.com" required>
+                            <textarea placeholder="You can write your message here. It won't be submitted at the moment but I will work on it.
+                            Thank you for understanding."></textarea>
+                            <button type="submit" class="send-button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
                 <div class="links">
                     <a href="https://github.com/KandawalaEd" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="www.linkedin.com/in/edmond-ombaso-2600b820b" target="_blank"><i class="fab fa-linkedin-in"></i></a>
