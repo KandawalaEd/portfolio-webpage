@@ -2,22 +2,20 @@
 html, body {
     height: 100%; 
     margin: 0;
-    display: flex;
+    display: flex; /*setting the webpage to use flex layout to allow easier positioning of elements*/
     flex-direction: column;
 }
 
 main {
-    flex: 1; 
+    flex: 1; /*Because I am using flex, I set this property to main so that main occupies all the space and pushes the footer down.*/
     padding-top: 60px; /* Add padding to account for fixed header */
 }
 
 body {
-    background-color: #004D61;
+    background-color: #004D61;  /*I wanted to go for a darker theme*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #F0F0F0;
+    color: #F0F0F0; 
 }
-
-
 
 a {
     color: aquamarine;
@@ -38,10 +36,10 @@ a:visited {
 /*Navigation*/
 .navigation {
     background-color: #251a14;
-    position: fixed;
-    top: 0;
+    position: fixed; /*fix the position of the navbar*/
+    top: 0;  /*setting this to 0 positions the navbar at the top of the screen*/
     width: 100%;
-    z-index: 1000;
+    z-index: 1000; /*This is for allowing other content to "pass" under the navbar. Moves the navbar "towards the user".*/
 }
 
 .nav-links {
@@ -52,10 +50,10 @@ a:visited {
     justify-content: center;
     list-style: none;
     padding: 1rem;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*allow the nav-links to wrap when the screen is too small. They used to spill over on a smaller screen.*/
 }
 /*Intro section*/
-
+/*animations for the intro content*/
 @keyframes slideinleft {
     from {
         transform: translateX(-300px);
@@ -77,12 +75,12 @@ a:visited {
 }
 
 #intro {
-    height: 100vh;
+    height: 100vh;  /*make the into section take up the entire screen*/
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*Align the items in a column instead of the default row. This is for stacking elements*/
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center; /*Last 3 lines center items on the screen*/
     font-size: 1.5rem;
     position: relative;
     overflow: hidden;
@@ -104,14 +102,13 @@ a:visited {
     animation-delay: 1s;
 }
 
-
 /*about section*/  
 #about {
-    padding-top: 2rem;
+    padding-top: 2rem;  /*Padding to prevent the content from being initially covered by the navbar. I used this in other sections as well.*/
 }
 
 #about h2 {
-    margin-left: 40px;
+    margin-left: 40px;  /*I wanted the section headings to be a little indented as compared to other content.*/
 }
 #about p {
     text-align: left;
@@ -120,12 +117,12 @@ a:visited {
 
 .about-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*I left this here so it is the default on smaller screens*/
     padding: 0 1rem;
 }
 
 .about-content figure {
-    flex-basis: 100%;
+    flex-basis: 100%; /*On smaller screens, will take up all the space*/
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -133,8 +130,6 @@ a:visited {
 .about-content .about-content-right {
     flex-basis: 100%;
 }
-
-
 
 /*skills*/
 #skills {
@@ -158,9 +153,6 @@ a:visited {
     margin-bottom: 1rem;
 }
 
-   
-
-
 .skills-column ul {
     list-style: none;
 }
@@ -174,7 +166,6 @@ a:visited {
     padding-top: 2rem;
 }
 
-
 #education h2 {
     text-align: left;
     margin-left: 40px;
@@ -182,7 +173,7 @@ a:visited {
 .education-content {
     display: flex;
     flex-direction: column;
-    padding: 0 1rem;
+    padding: 0 1rem;  /*No padding on the top and bottom but 1rem (16px) on the sides*/
 }
 
 .education-content > div {
@@ -229,14 +220,14 @@ a:visited {
 .email-sub input,
 .email-sub textarea,
 .email-sub button {
-    border-radius: 5px;
+    border-radius: 5px; /*give a rounded feel*/
     font-size: 1rem;
     border: 5px solid white;    
 }
 
 .email-sub textarea {
-    height: 150px;
-    resize: vertical;
+    height: 150px;   /*default height then allow the user to resize vertically but not horizontally*/
+    resize: vertical; 
 }
 
 /*footer and links*/
@@ -268,7 +259,7 @@ footer {
 }
 
 /* Media Queries */
-@media (min-width: 768px) {
+@media (min-width: 768px) {     /*Styles that apply to devices with a viewport of 768px or more*/
     #intro {
         font-size: 2rem;
     }
@@ -278,7 +269,7 @@ footer {
     }
 
     .about-content {
-        flex-direction: row;
+        flex-direction: row; /*On larger screens, the two upcoming divs will share the space*/
     }
 
     .about-content figure {
@@ -315,7 +306,7 @@ footer {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) {  /*Styles that apply to devices with a viewport of 1024px or more*/
     .nav-links {
         gap: 2rem;
     }
