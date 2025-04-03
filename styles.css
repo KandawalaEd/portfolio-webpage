@@ -8,6 +8,7 @@ html, body {
 
 main {
     flex: 1; 
+    padding-top: 60px; /* Add padding to account for fixed header */
 }
 
 body {
@@ -47,9 +48,11 @@ a:visited {
     margin: 0 auto;
     display: flex;
     max-width: 1200px;
-    gap: 2rem;
-    justify-content: space-between;
+    gap: 1rem;
+    justify-content: center;
     list-style: none;
+    padding: 1rem;
+    flex-wrap: wrap;
 }
 /*Intro section*/
 
@@ -80,15 +83,14 @@ a:visited {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: relative;
     overflow: hidden;
-    
-    
+    padding: 0 1rem;
 }
 #intro h1 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     animation-name: slideinleft;
     animation-duration: 0.5s;
     animation-timing-function: ease-in;
@@ -117,15 +119,19 @@ a:visited {
 }
 
 .about-content {
-    display:flex;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
 }
 
 .about-content figure {
-    flex-basis: 25%;
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .about-content .about-content-right {
-    flex-basis: 75%;
+    flex-basis: 100%;
 }
 
 
@@ -143,12 +149,13 @@ a:visited {
 
 .skills-content {
     display: flex;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    padding: 0 1rem;
 }
-.skills-content >p,
+.skills-content > p,
 .skills-content .skills-column {
-    flex-basis: 33%;
+    flex-basis: 100%;
+    margin-bottom: 1rem;
 }
 
    
@@ -172,10 +179,14 @@ a:visited {
     text-align: left;
     margin-left: 40px;
 }
-.education-content{
+.education-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.education-content > div {
+    margin-bottom: 2rem;
 }
 
 .education-content * {
@@ -194,21 +205,19 @@ a:visited {
 
 .socials-flex {
     display: flex;
-   padding-bottom: 1rem;
+    flex-direction: column;
+    padding: 0 1rem;
 }
 
-.socials-flex .my-contacts {
-    flex-basis: 25%;
+.socials-flex .my-contacts,
+.socials-flex .email-me {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
 }
 
 .contact-item i {
     font-size: 1.5rem;
     color: aquamarine;
-}
-
-.socials-flex .email-me {
-    flex-basis: 75%;
-    margin-right: 2%;
 }
 
 .email-sub {
@@ -256,4 +265,58 @@ footer {
 
 .rights p {
     margin: 0;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    #intro {
+        font-size: 2rem;
+    }
+
+    #intro h1 {
+        font-size: 3.5rem;
+    }
+
+    .about-content {
+        flex-direction: row;
+    }
+
+    .about-content figure {
+        flex-basis: 25%;
+    }
+
+    .about-content .about-content-right {
+        flex-basis: 75%;
+    }
+
+    .skills-content {
+        flex-direction: row;
+    }
+
+    .skills-content > p,
+    .skills-content .skills-column {
+        flex-basis: 33%;
+    }
+
+    .education-content {
+        flex-direction: row;
+    }
+
+    .socials-flex {
+        flex-direction: row;
+    }
+
+    .socials-flex .my-contacts {
+        flex-basis: 25%;
+    }
+
+    .socials-flex .email-me {
+        flex-basis: 75%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-links {
+        gap: 2rem;
+    }
 }
