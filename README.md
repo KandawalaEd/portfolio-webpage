@@ -4,4 +4,6 @@ This is my portfolio webpage for PLP hackathon 1.
 
 I created it using purely CSS and HTML.
 
+I deployed the webpage on git hub pages: https://kandawalaed.github.io/portfolio-webpage/
+
 I only included comments at the end because I was learning while creating the webpage and having to comment and delete comments when I found better strategies became tiresome.
